@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Initial</title>
+  </head>
+  <body>
+    <style>
+      * {
+        font-family: monospace;
+      }
+
+      .message {
+        &.error {
+          color: red;
+        }
+      }
+    </style>
+    <p>Message from backend: <span id="message:backend"></span></p>
+    <p>
+      DB Status:
+      <span class="message error" id="message:status">Disconnected</span>
+    </p>
+    <p>Member List:</p>
+    <ul>
+      <ol>
+        1. Pongsatorn Liao - 67130500021
+      </ol>
+      <ol>
+        2. Amolnut Suksumek - 67130500055
+      </ol>
+      <ol>
+        3. Kittihengcharoen Chaemprasert - 67130500064
+      </ol>
+    </ul>
+  </body>
+</html>
