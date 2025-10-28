@@ -1,10 +1,13 @@
+import { config } from "dotenv"
 import express from "express"
 import http from "http"
 import cors from "cors"
 
 import { createPool } from "mysql2/promise"
 
-const PORT = process.env.PORT
+config()
+
+const PORT = process.env.PORT || 3000
 
 const app = express()
 const server = http.createServer(app)
